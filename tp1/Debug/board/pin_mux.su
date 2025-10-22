@@ -1,0 +1,14 @@
+U:\pratiqueexam\tp1\drivers/fsl_clock.h:639:20:CLOCK_EnableClock	16	static
+U:\pratiqueexam\tp1\drivers/fsl_port.h:243:20:PORT_SetPinConfig	32	static
+U:\pratiqueexam\tp1\drivers/fsl_port.h:346:20:PORT_SetPinMux	24	static
+../board/pin_mux.c:141:6:BOARD_InitBootPins	8	static
+../board/pin_mux.c:163:6:BOARD_InitPins	8	static
+../board/pin_mux.c:187:6:BOARD_InitBUTTONsPins	24	static
+../board/pin_mux.c:270:6:BOARD_InitLEDsPins	32	static
+../board/pin_mux.c:373:6:BOARD_InitTOUCHPins	16	static
+../board/pin_mux.c:431:6:BOARD_InitLIGHT_SENSORPins	8	static
+../board/pin_mux.c:480:6:BOARD_InitUSBPins	16	static
+../board/pin_mux.c:523:6:BOARD_InitDEBUG_UARTPins	16	static
+../board/pin_mux.c:588:6:BOARD_InitACCELPins	40	static
+../board/pin_mux.c:730:6:BOARD_InitGYROPins	40	static
+../board/pin_mux.c:861:6:BOARD_InitOSCPins	16	static

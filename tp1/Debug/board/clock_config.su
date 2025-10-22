@@ -1,0 +1,11 @@
+U:\pratiqueexam\tp1\drivers/fsl_clock.h:850:20:CLOCK_SetRunModeSysClkConfig	16	static
+U:\pratiqueexam\tp1\drivers/fsl_clock.h:864:20:CLOCK_SetHsrunModeSysClkConfig	16	static
+U:\pratiqueexam\tp1\drivers/fsl_clock.h:878:20:CLOCK_GetCurSysClkConfig	16	static
+U:\pratiqueexam\tp1\drivers/fsl_clock.h:1394:20:CLOCK_SetXtal0Freq	16	static
+U:\pratiqueexam\tp1\drivers/fsl_smc.h:260:20:SMC_SetPowerModeProtection	16	static
+U:\pratiqueexam\tp1\drivers/fsl_smc.h:279:33:SMC_GetPowerModeState	16	static
+../board/clock_config.c:69:13:CLOCK_CONFIG_SetScgOutSel	16	static
+../board/clock_config.c:85:13:CLOCK_CONFIG_FircSafeConfig	40	static
+../board/clock_config.c:133:6:BOARD_InitBootClocks	8	static
+../board/clock_config.c:250:6:BOARD_BootClockHSRUN	16	static
+../board/clock_config.c:369:6:BOARD_BootClockVLPR	8	static

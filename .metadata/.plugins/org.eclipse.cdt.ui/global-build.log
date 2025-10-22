@@ -1,0 +1,165 @@
+11:32:35 **** Build of configuration Debug for project tp1 ****
+make -r -j20 all 
+Building file: ../utilities/fsl_debug_console.c
+Building file: ../utilities/fsl_str.c
+Building file: ../startup/startup_mkl28z7.c
+Building file: ../source/mtb.c
+Building file: ../source/semihost_hardfault.c
+Building file: ../source/tp1.c
+Building file: ../drivers/fsl_clock.c
+Building file: ../drivers/fsl_common.c
+Building file: ../drivers/fsl_ftfx_cache.c
+Building file: ../drivers/fsl_ftfx_controller.c
+Building file: ../drivers/fsl_ftfx_flash.c
+Building file: ../drivers/fsl_ftfx_flexnvm.c
+Building file: ../drivers/fsl_gpio.c
+Building file: ../drivers/fsl_lpuart.c
+Building file: ../drivers/fsl_rtc.c
+Building file: ../drivers/fsl_smc.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+Building file: ../device/system_MKL28Z7.c
+Building file: ../component/uart/lpuart_adapter.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+Building file: ../component/serial_manager/serial_manager.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+Building file: ../component/serial_manager/serial_port_uart.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../utilities/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"utilities/fsl_debug_console.d" -MT"utilities/fsl_debug_console.o" -MT"utilities/fsl_debug_console.d" -o "utilities/fsl_debug_console.o" "../utilities/fsl_debug_console.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../utilities/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"utilities/fsl_str.d" -MT"utilities/fsl_str.o" -MT"utilities/fsl_str.d" -o "utilities/fsl_str.o" "../utilities/fsl_str.c"
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../startup/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"startup/startup_mkl28z7.d" -MT"startup/startup_mkl28z7.o" -MT"startup/startup_mkl28z7.d" -o "startup/startup_mkl28z7.o" "../startup/startup_mkl28z7.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/mtb.d" -MT"source/mtb.o" -MT"source/mtb.d" -o "source/mtb.o" "../source/mtb.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/semihost_hardfault.d" -MT"source/semihost_hardfault.o" -MT"source/semihost_hardfault.d" -o "source/semihost_hardfault.o" "../source/semihost_hardfault.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/tp1.d" -MT"source/tp1.o" -MT"source/tp1.d" -o "source/tp1.o" "../source/tp1.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_clock.d" -MT"drivers/fsl_clock.o" -MT"drivers/fsl_clock.d" -o "drivers/fsl_clock.o" "../drivers/fsl_clock.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_common.d" -MT"drivers/fsl_common.o" -MT"drivers/fsl_common.d" -o "drivers/fsl_common.o" "../drivers/fsl_common.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_ftfx_cache.d" -MT"drivers/fsl_ftfx_cache.o" -MT"drivers/fsl_ftfx_cache.d" -o "drivers/fsl_ftfx_cache.o" "../drivers/fsl_ftfx_cache.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_ftfx_controller.d" -MT"drivers/fsl_ftfx_controller.o" -MT"drivers/fsl_ftfx_controller.d" -o "drivers/fsl_ftfx_controller.o" "../drivers/fsl_ftfx_controller.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_ftfx_flash.d" -MT"drivers/fsl_ftfx_flash.o" -MT"drivers/fsl_ftfx_flash.d" -o "drivers/fsl_ftfx_flash.o" "../drivers/fsl_ftfx_flash.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_ftfx_flexnvm.d" -MT"drivers/fsl_ftfx_flexnvm.o" -MT"drivers/fsl_ftfx_flexnvm.d" -o "drivers/fsl_ftfx_flexnvm.o" "../drivers/fsl_ftfx_flexnvm.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_gpio.d" -MT"drivers/fsl_gpio.o" -MT"drivers/fsl_gpio.d" -o "drivers/fsl_gpio.o" "../drivers/fsl_gpio.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_lpuart.d" -MT"drivers/fsl_lpuart.o" -MT"drivers/fsl_lpuart.d" -o "drivers/fsl_lpuart.o" "../drivers/fsl_lpuart.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_rtc.d" -MT"drivers/fsl_rtc.o" -MT"drivers/fsl_rtc.d" -o "drivers/fsl_rtc.o" "../drivers/fsl_rtc.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_smc.d" -MT"drivers/fsl_smc.o" -MT"drivers/fsl_smc.d" -o "drivers/fsl_smc.o" "../drivers/fsl_smc.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../device/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"device/system_MKL28Z7.d" -MT"device/system_MKL28Z7.o" -MT"device/system_MKL28Z7.d" -o "device/system_MKL28Z7.o" "../device/system_MKL28Z7.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../component/uart/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"component/uart/lpuart_adapter.d" -MT"component/uart/lpuart_adapter.o" -MT"component/uart/lpuart_adapter.d" -o "component/uart/lpuart_adapter.o" "../component/uart/lpuart_adapter.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../component/serial_manager/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"component/serial_manager/serial_manager.d" -MT"component/serial_manager/serial_manager.o" -MT"component/serial_manager/serial_manager.d" -o "component/serial_manager/serial_manager.o" "../component/serial_manager/serial_manager.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../component/serial_manager/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"component/serial_manager/serial_port_uart.d" -MT"component/serial_manager/serial_port_uart.o" -MT"component/serial_manager/serial_port_uart.d" -o "component/serial_manager/serial_port_uart.o" "../component/serial_manager/serial_port_uart.c"
+Finished building: ../source/mtb.c
+Finished building: ../startup/startup_mkl28z7.c
+Finished building: ../source/semihost_hardfault.c
+Finished building: ../utilities/fsl_str.c
+ 
+ 
+ 
+ 
+Finished building: ../utilities/fsl_debug_console.c
+Finished building: ../drivers/fsl_common.c
+Building file: ../board/board.c
+Building file: ../board/clock_config.c
+Building file: ../board/peripherals.c
+Building file: ../board/pin_mux.c
+Finished building: ../source/tp1.c
+Finished building: ../device/system_MKL28Z7.c
+ 
+Invoking: MCU C Compiler
+ 
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+Finished building: ../drivers/fsl_gpio.c
+Finished building: ../component/serial_manager/serial_manager.c
+Invoking: MCU C Compiler
+ 
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../board/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/board.d" -MT"board/board.o" -MT"board/board.d" -o "board/board.o" "../board/board.c"
+ 
+Finished building: ../drivers/fsl_ftfx_cache.c
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../board/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/clock_config.d" -MT"board/clock_config.o" -MT"board/clock_config.d" -o "board/clock_config.o" "../board/clock_config.c"
+Finished building: ../drivers/fsl_clock.c
+Finished building: ../drivers/fsl_ftfx_controller.c
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../board/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/peripherals.d" -MT"board/peripherals.o" -MT"board/peripherals.d" -o "board/peripherals.o" "../board/peripherals.c"
+Finished building: ../drivers/fsl_ftfx_flash.c
+Finished building: ../drivers/fsl_ftfx_flexnvm.c
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../board/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/pin_mux.d" -MT"board/pin_mux.o" -MT"board/pin_mux.d" -o "board/pin_mux.o" "../board/pin_mux.c"
+ 
+ 
+Finished building: ../component/uart/lpuart_adapter.c
+ 
+ 
+ 
+ 
+ 
+ 
+Finished building: ../drivers/fsl_rtc.c
+Finished building: ../component/serial_manager/serial_port_uart.c
+Finished building: ../drivers/fsl_lpuart.c
+Finished building: ../drivers/fsl_smc.c
+ 
+ 
+ 
+ 
+Finished building: ../board/peripherals.c
+ 
+Finished building: ../board/board.c
+ 
+Finished building: ../board/clock_config.c
+Finished building: ../board/pin_mux.c
+ 
+ 
+Building target: tp1.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="tp1.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T tp1_Debug.ld -o "tp1.axf" ./utilities/fsl_debug_console.o ./utilities/fsl_str.o  ./startup/startup_mkl28z7.o  ./source/mtb.o ./source/semihost_hardfault.o ./source/tp1.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpuart.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o  ./device/system_MKL28Z7.o  ./component/uart/lpuart_adapter.o  ./component/serial_manager/serial_manager.o ./component/serial_manager/serial_port_uart.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:       13668 B       512 KB      2.61%
+            SRAM:        8572 B       128 KB      6.54%
+         USB_RAM:          0 GB         2 KB      0.00%
+Finished building target: tp1.axf
+ 
+Performing post-build steps
+arm-none-eabi-size "tp1.axf"; # arm-none-eabi-objcopy -v -O binary "tp1.axf" "tp1.bin" ; # checksum -p MKL28Z512xxx7 -d "tp1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  13664	      4	   8568	  22236	   56dc	tp1.axf
+ 
+11:32:53 **** Incremental Build of configuration Debug for project tp1 ****
+make -r -j20 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size "tp1.axf"; # arm-none-eabi-objcopy -v -O binary "tp1.axf" "tp1.bin" ; # checksum -p MKL28Z512xxx7 -d "tp1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  13664	      4	   8568	  22236	   56dc	tp1.axf
+ 
+11:45:52 **** Incremental Build of configuration Debug for project tp1 ****
+make -r -j20 all 
+Building file: ../source/tp1.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL28Z512VLL7 -DCPU_MKL28Z512VLL7_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"U:\pratiqueexam\tp1\board" -I"U:\pratiqueexam\tp1\source" -I"U:\pratiqueexam\tp1" -I"U:\pratiqueexam\tp1\drivers" -I"U:\pratiqueexam\tp1\component\serial_manager" -I"U:\pratiqueexam\tp1\CMSIS" -I"U:\pratiqueexam\tp1\utilities" -I"U:\pratiqueexam\tp1\component\uart" -I"U:\pratiqueexam\tp1\device" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/tp1.d" -MT"source/tp1.o" -MT"source/tp1.d" -o "source/tp1.o" "../source/tp1.c"
+Finished building: ../source/tp1.c
+ 
+Building target: tp1.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="tp1.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T tp1_Debug.ld -o "tp1.axf" ./utilities/fsl_debug_console.o ./utilities/fsl_str.o  ./startup/startup_mkl28z7.o  ./source/mtb.o ./source/semihost_hardfault.o ./source/tp1.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpuart.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o  ./device/system_MKL28Z7.o  ./component/uart/lpuart_adapter.o  ./component/serial_manager/serial_manager.o ./component/serial_manager/serial_port_uart.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:       17132 B       512 KB      3.27%
+            SRAM:        8568 B       128 KB      6.54%
+         USB_RAM:          0 GB         2 KB      0.00%
+Finished building target: tp1.axf
+ 
+Performing post-build steps
+arm-none-eabi-size "tp1.axf"; # arm-none-eabi-objcopy -v -O binary "tp1.axf" "tp1.bin" ; # checksum -p MKL28Z512xxx7 -d "tp1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  17128	      4	   8564	  25696	   6460	tp1.axf
+ 
