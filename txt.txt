@@ -1,0 +1,445 @@
+
+
+Introduction aux systèmes embarqués
+
+Systèmes embarqués
+
+Système matériel et logiciel autonome conçu pour exécuter une tâche précise et souvent embarqué dans un système plus large. Il est souvent en temps réel, mais pas toujours.
+
+Les systèmes embarqués sont omniprésents dans plusieurs secteurs (automobile, avionique, électroménagers, téléphones). 90% des microprocesseurs sont fabriqués comme des composantes de systèmes embarqués.
+
+Rôle des systèmes embarqués
+
+Leur rôle est de traiter l’information. C’est un intermédiaire puisqu’il fait la réception d’information provenant de son environnement, le traitement de cette information et l’action à travers l’objet qui l’héberge.
+
+Les systèmes embarqués se trouvent souvent dans un système plus large avec des entrées (interroge le système via des senseurs) et des sorties (agit sur le système via des actionneurs). C’est possible d’interagir directement avec l’utilisateur.
+
+Ils ont du matériel et logiciels dédiés à une application spécifique, leur rapport coût/bénéfice est réduit, l’exécution est souvent en temps réel et la consommation d’énergie est contrôlée.
+
+Application en temps réel : système informatique qui suit les procédés demandés en respectant les contraintes temporelles définies dans le cahier des charges de l’application.
+
+Exigences des systèmes embarqués
+
+Exigences matérielles : applications doivent être peu gourmandes en ressources mémoire (code optimisé)
+
+Exigences consommation : applications doivent prendre en considération les ressources énergétiques limités du matériel (autonomie énergétique, différents niveaux de gestion de consommation, mise en veille du matériel, etc.)
+
+Architecture d’un système embarqué
+
+L’interface IHM (Interface Homme Machine) est adaptée selon l’application (LED, boutons, écran tactile). Généralement, il n’y a pas de clavier puisque la communication se fait via console distante. Le système embarqué dispose des périphériques et capteurs spécifiques pour son application (carte SD, wifi, Bluetooth, actionneurs, capteurs température)
+
+Toute l’architecture est réalisée autour d’un microcontrôleur et utilise le bootloader pour le démarrage autonome du système.
+
+Processeur (souvent architecture RISC)
+
+Mémoire flash pour stocker le programme
+
+Mémoire SRAM pour l’exécution du programme
+
+GPIO (entrées/sorties simples et configurables
+
+On peut prendre par exemple les essuie-glaces automatiques qui ont un capteur permettant de mesurer une grandeur physique (qté pluie), un convertisseur AD qui convertit un signal analogique en digital afin d’être traité par le processeur, un processeur qui calcule la force de la pluie et détermine la vitesse des essuies glaces et un convertisseur DS et actionneur qui permet d’actionner les moteurs des essuies glaces.
+
+Langage C
+
+Comme avantages, il permet la minimisation de l’allocation mémoire nécessaire et la maximisation de la performance (par utilisation de pointeurs) et met en œuvre un nombre restreint de concepts, ce qui facilite l’apprentissage et la maîtrise du langage et l’écriture de compilateurs simples et rapides.
+
+Comme inconvénients, l’utilisation des pointeurs rend le développement de mécanismes de sureté des logiciels très difficile et offre des possibilités de créer des vulnérabilités de type buffer overflow.
+
+Printf : produit affichage dans la console
+
+\n : saut de ligne
+
+#include <x> : inclure une bibliothèque
+
+Langage C++
+
+C’est un langage de programmation compilé qui permet la programmation sous de multiples paradigmes (orienté objet).
+
+Ses avantages sont que les programmes sont plus faciles à maintenir (dû au orienté objet), sa programmation est plus claire et la modularité est accrue (réutilisation du code).
+
+Ses inconvénients sont que le programme résultant peut être moins efficace (taille mémoire et rapidité) que celui développé avec le C
+
+ 
+
+Introduction aux microcontrôleurs kinetis et architecture RAM
+
+Architecture RISC
+
+Reduced Instruction Set Computer est un type d’architecture matérielle de microprocesseurs qui se caractérise par un jeu d’instructions réduit, facile à décoder et comportant uniquement des instructions simples.
+
+Caractéristiques :
+
+Un cycle d’horloge par instruction
+
+Pipelining : exécution simultanée de parties d’instruction
+
+Un grand nombre de registres : minimalise l’accès à la mémoire
+
+Microcontrôleurs : désigne un ordinateur sur un CHIP. Il inclut un processeur, mémoire (RAM, EEPROM), unités périphériques (temporisateurs, DAC) et interfaces d’entrées/sorties.
+
+Advanced RISC Machine (ARM)
+
+C’est des microprocesseurs ayant l’architecture ARM, la plus utilisée au monde. De nombreux systèmes d’exploitation sont compatibles avec l’architecture ARM.
+
+ARM (Architecture Harvard) :
+
+Mémoires distinctes pour instructions et données
+
+Dans le modèle Von Neumann, les données et instructions sont dans le même espace mémoire
+
+Possibilité de chercher la prochaine instruction pendant l’exécution de celle courante
+
+Gain en vitesse d’exécution, mais le circuit est plus complexe
+
+ARM
+
+Mémoire flash de programme : espace divisé en deux sections (boot et application)
+
+Catégories de processeurs ARM
+
+Processeur Cortex M0 : le plus petit disponible
+
+Processeur Cortex M0+ : meilleure efficacité énergétique de la famille ARM
+
+Microcontrôleur Kinetis MKL27Z
+
+Processor: 32 bit ARM Cortex M0+, 48MHz operation max
+
+Memories : 64KB Flash, 16KB SRAM, 16 KB ROM with bootloader
+
+System integration : 4 channel DMA controller (Direct Memory Access (chercher données sans gosser processeur), Watchdog, Low-leakage wakeup unit (tjrs en fonctionnement, va réveiller processeur si un événement se produit)
+
+Analog peripherals : 16 bit ADC, 6 bit DAC
+
+Communication peripherals : USB full speed, 2 ‘’bus’’ disponible. Chaque chose est addressee pour avoir un accès rapide aux données
+
+Timers : registres conçus pour mettre valeur et changer de manière régulière
+
+Security : 80 bit unique IMEI
+
+Human Machine Interface : 54 pins qu’on a accès sur la machine (GPIO), GPIO interrupt
+
+Ports d’Entrée/Sortie : peut juste envoyer ou lire des 1 et 0, 1=tension, 0= pas tension
+
+ 
+
+DAC : Converti une valeur digitale (binaire) en valeur analogique
+
+LED RGB : La LED RGB est connectée aux signaux PWM des ports
+
+ 
+
+Rouge e29  nom gpio: GPIOE29
+
+Bleu e31 nom gpio : GPIOE31
+
+Vert c4 nom gpio : GPIOC4
+
+ 
+
+SW3 e4 nom : GPIOE4
+
+SW2  c6 nom: GPIOC6
+
+ 
+
+Senseur de toucher capacitif : détecte une variation de capacitance. Peut être utilisé pour implémenter un ‘’slider’’ ou un bouton. Connecté au PTE29 et PTE30.
+
+OpenSDA : Adapteur série et de débogage. C’est une interface entre l’ordinateur et le microcontrôleur via une connexion USB. C’est open-source.
+
+Langage C
+
+Il est universel, compacte, modern (on optimise en déclarant exactement la taille des variables dans le code, ce qui permet de ressortir des erreurs (ex. essayer de sortir un int d’une varchar). Les langages non-typés ne permettent pas de donner ces erreurs-là.), manipulation de bas niveau (pointeurs, opérations au niveau bits).
+
+Toutefois, il est faiblement typé, il a une gestion explicite de la mémoire et ne garanti pas la sureté du code dû aux pointeurs.
+
+Compilation en C
+
+Traitement par le préprocesseur : le fichier source (.c) est analyser par le préprocesseur qui effectue des transformations purement syntaxiques (traitement macros, compilation conditionnelle, inclusion de fichiers source)
+
+Compilation : traduit le fichier généré en assembleur (instructions du microprocesseur)
+
+Assemblage : transforme le code assembleur en fichier binaire
+
+Édition de liens : Puisque les programmes sont souvent séparés en plusieurs fichiers (appels aux librairies, etc.), il faut assembler chaque code entre eux. L’édition des liens produit un fichier exécutable (.exe)
+
+Programmes en C
+
+Un programme en C est composé de un ou plusieurs fichiers sources. Chaque fichier source (.c ou .h) peut contenir :
+
+Directives préprocesseur
+
+Définition de constantes
+
+Déclaration de variables
+
+Déclaration/définition de fonctions
+
+Chaque programme en C comporte un minimum de code indispensable. C’est la base pour la plupart de nos programmes en C
+
+#Include <stdlib.h>
+
+Int main()
+
+{
+
+printf(‘’hello world’’\n) ;
+
+Return 0 ;
+
+}
+
+Les directives #include sont en haut des fichiers source.
+
+Printf peut être accompagné de %d (int), %ld (long), %f (float ou double)
+
+On peut saisir plusieurs données, tant que on inclut les %d, %d avec des virgules à la fin
+
+Scanf permet la saisie d’une entrée à partir d’une console
+
+Int main (void)
+
+{
+
+Int age =0 ; //init var a 0
+
+Printf(“quell age avez-vous ?’’) ;
+
+Scanf(‘’%d’’, &age) ;
+
+Printf(‘’ah vs avez donc %d ans ! \n\n, age) ;
+
+Return 0 ;
+
+}
+
+On peut ajouter des commentaires avec // ou /* xxx */
+
+Les variables permettent de réserver de l’espace mémoire pour stocker leurs valeurs. Si une variable est utilisée dans plusieurs modules, elle doit être définie dans un des modules et déclarée dans le reste des modules
+
+Int x = 3 ;
+
+Float y = 3.4 ;
+
+Char z = ‘z’ ;
+
+Variables locales (privées) sont déclarées à l’intérieur du code d’une fonction et meurt après exécution.
+
+Variables globales (publiques) sont déclarées à l’extérieur de la fonction et ont la durée de vie du programme.
+
+Variable static : reste après chaque exécution
+
+Variable constante : garde les mêmes valeurs pendant toute la durée d’exécution du programme, une fois déclarées, aucun code peut altérer ses valeurs (mot clé const devant le type de variable)
+
+Const int NOMBRE_DE_VIES_INITIALES = 5 ;
+
+On peut ajouter la bibliothèque mathématique pour avoir accès à des fonctions préfaites (#include <math.h>) Elle contient fabs, pow, sqrt, log, exp, etc.
+
+On peut utiliser le if (doit être évalué à vrai ou faux)
+
+==, >, <, >=, <=, !=
+
+On peut aussi utiliser le if-else
+
+On peut ajouter des prédicats boléens pour combiner des opérations (&& (et), || (ou), ! (non)
+
+On peut utiliser un switch
+
+#include <stdio.h>
+
+#include <stdlib.h>
+
+Int main(void)
+
+{
+
+Int choixMenu ;
+
+Printf(‘’=== Menu ===\n\n’’) ;
+
+Printf(‘’1. Royal cheese\n’’);
+
+Printf(‘’2. Mc deluxe\n’’);
+
+Printf(‘’3. Mc chicken\n’’);
+
+Printf(‘’4. Biog mac\n’’);
+
+Printf(‘’\nvotre choix?’’);
+
+Scanf(‘’%d’’, &choixmenu) ;
+
+Printf(‘’\n’’)
+
+Switch(choixmenu)
+
+Case 1 :
+
+Printf(‘’vous avez choisi royal cheese’’) ;
+
+Break ;
+
+Case 2 :
+
+Printf(‘’vous avez choisi mcdeluxe’’) ;
+
+Break ;
+
+Case 3 :
+
+Printf(‘’vous avez choisi mcchicken’’) ;
+
+Break ;
+
+Case 4 :
+
+Printf(‘’vous avez choisi big mac’’) ;
+
+Break ;
+
+Default :
+
+Printf(‘’vs navez pas rentre un num correct’’) ;
+
+Break ;
+
+}
+
+Printf(‘’\n\n’’) ;
+
+Return 0 ;
+
+}
+
+GPIO
+
+C’est le General Purpose Input and Output. Il permet d’interfacer le microcontrôleur avec d’autres périphériques. Il permet de prendre en entrée des 0 et 1 et sortir des 0 et 1.
+
+Fonctions
+
+Permettent une modularité du code. Une fonction est définie par un nom, des arguments formels, le type de retour et le corps (instructions). Les arguments formels sont les variables déclarées dans l’entête de la fonction et les arguments effectifs sont les variables/valeurs avec lesquelles la fonction est invoquée.
+
+Type_retour nom_fonction (type1 arg1, type 2 arg 2)
+
+{
+
+//declaration variables locales
+
+Inst1 ;
+
+Instn ;
+
+Return v ;
+
+}
+
+Conversion de type
+
+Conversion implicite (réalisée par compilateur)
+
+Des règles de conversions de types sont appliquées par le compilateur lors de l’évaluation d’une expression ou lors d’une affectation
+
+À l’évaluation d’une expression : double va prendre priorité, float aussi.
+
+À l’affectation d’une expression : le type de l’expression de droite est converti (float à int tronque la partie fractionnaire, long à court tronque les bits de poids faible)
+
+Conversion explicite (spécifiée par le programmeur)
+
+On utilise un cast pour convertir explicitement
+
+Char i ;
+
+Int j ;
+
+J = (int) i ;
+
+Les pointeurs
+
+Pour allouer de la mémoire dynamique, il faut absolument utiliser des pointeurs.
+
+Chaque variable est un emplacement de mémoire défini par une adresse. Cette adresse peut être obtenue en utilisant l’opérateur &
+
+Int main(void){
+
+Int var ;
+
+Printf(‘’adresse de var : %x’’, &var) ;
+
+Return 0 ;
+
+}
+
+L’opérateur & s’applique uniquement sur des objets en mémoire, il ne peut pas être appliqué sur des constantes. Il existe aussi l’opérateur unitaire * :
+
+Int a = 2, b =3 ;
+
+Int *p ; //p pointeur sur un int
+
+P= &a ; //p pointe sur a
+
+B= *p ; //b reçoit la val de l’objet pointe p (donc a)
+
+*p – 0 ; //a vaut 0
+
+Les tableaux
+
+C’est des suites de variables de même type situés dans un espace contigu en mémoire.
+
+Int tab[10] //declaration d’un tab dentiers de longueur 10
+
+Pour y accéder…
+
+Int tab [4] ;
+
+Tab[0] = 10 ;
+
+Tab[1] = 23 ;
+
+Tab[2] = 505 ;
+
+Tab[3] = 8 ;
+
+Pour utiliser des pointeurs dans les tableaux, on fait comme-ci :
+
+Int tab[4] ; //tab est un pointeur sur la premiere case du tableau
+
+Printf(‘’%d’’, tab) ; //afficher ladresse ou se trouve le tableau
+
+Printf(‘’%d’’, tab[0]) ; //afficher le contenu de la premiere case du tableau
+
+Pour initialiser un tableau, on fait comme-ci :
+
+Int tableau[4] ;
+
+For (int i=0 ; i<4 ; i++){
+
+Tableau[i] = 0 ;
+
+}
+
+On a aussi des fonctions récursives (fonctions qui s’invoquent elle-même)
+
+Unisigned long factoriel (int n)
+
+{
+
+If (n<0) {
+
+Return -1;
+
+}
+
+Else if (n ==0 || n==1){
+
+Return 1;
+
+}
+
+Return n *factoriel (n-1);
+
+}
+
+Les différents appels des fonctions récursives sont empilées dans le stack. Chaque appel se trouve donc l’un à la suite de l’autre dans la pile du programme. Il est important de noter qu’on peut facilement faire un débordement de la pile. C’est pas très recommandé de faire des fonctions récursives dans des systèmes embarqués puisque la mémoire et limitée par la pile d’exécution.
+
+ 
